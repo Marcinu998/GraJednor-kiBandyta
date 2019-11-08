@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(to left, rgb(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 0.9) 100%),
+        url(./img/casino.jpg);
+    color: rgb(0, 0, 0);
+}
+
+.wrap {
+    width: 90%;
+
+    font-family: 'open sans', roboto, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.game {
+    display: flex;
+}
+
+.game div {
+    height: 30vh;
+    flex-grow: 1;
+    margin: 10px;
+    border: 3px solid gray;
+}
+
+.play {
+    text-align: center;
+}
+
+.play input {
+    height: 90px;
+    font-size: 40px;
+    width: 400px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.play button {
+    width: 40%;
+    height: 90px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 6px;
+}
+
+.panel {
+    margin: 20px 0 40px;
+    font-size: 26px;
+}
+
+.panel span,
+.score span {
+    font-weight: bold;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    h1 {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .game div {
+        height: 20vh;
+        flex-grow: 1;
+        margin: 10px;
+        border: 3px solid gray;
+    }
+
+    .play {
+        margin-top: 30px;
+    }
+
+    .play input {
+        height: 40px;
+        font-size: 20px;
+        width: 200px;
+        border: 3px solid black;
+        text-align: center;
+    }
+
+    .play button {
+        width: 40%;
+        height: 40px;
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: #333;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .wrap {
+        width: 100%;
+        font-family: 'open sans', roboto, sans-serif;
+    }
+
+    .panel {
+        margin: 30px 0 30px;
+        font-size: 20px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    h1 {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .game div {
+        height: 35vh;
+        flex-grow: 1;
+        margin: 15px;
+        border: 3px solid rgb(0, 0, 0);
+    }
+
+    .play {
+        margin-top: 50px;
+    }
+
+    .play input {
+        height: 60px;
+        font-size: 30px;
+        width: 30%;
+        border: 3px solid black;
+        text-align: center;
+    }
+
+    .play button {
+        width: 30%;
+        height: 60px;
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        background-color: #333;
+        border: 3px solid rgb(0, 0, 0);
+        color: white;
+        cursor: pointer;
+    }
+
+    .wrap {
+        width: 80%;
+        margin: 5vh auto 0;
+        font-family: 'open sans', roboto, sans-serif;
+
+    }
+
+    .panel {
+        margin: 30px 0 30px;
+        font-size: 20px;
+    }
+
+    .score {
+        font-size: 25px;
+    }
+}
+
+
+@media (orientation: landscape) and (min-width: 1500px) {}
+
+@media(min-width: 1024px) {
+    header button {
+        cursor: pointer;
+        transition: 1s;
+        padding: 20px;
+    }
+
+    header button:hover {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+}
